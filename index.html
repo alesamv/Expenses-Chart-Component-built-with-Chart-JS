@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src=
+"https://code.jquery.com/jquery-1.12.0.min.js">
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; display: none; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="balance">
+      <div class="text__balance">
+        <p>My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <div class="logo__balance">
+        <img src="./images/logo.svg" alt="">
+      </div>
+    </div>
+    
+    <div class="expenses">
+      <h2>Spending - Last 7 days</h2>
+      <div class="graphics">
+        <canvas id="bar-chart" width="800" height="450"></canvas>
+      </div>
+
+      <div class="resume">
+        <div class="resume__left">
+          <p>Total this month</p>
+          <h1>$478.33</h1>
+        </div>
+
+        <div class="resume__right">
+          <h4>+2.4%</h4>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script type="text/javascript" src="./data.json"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

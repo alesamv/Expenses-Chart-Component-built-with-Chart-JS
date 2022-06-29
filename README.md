@@ -21,7 +21,7 @@ Users can:
 ### Links
 
 - Solution URL: [Code](https://github.com/alesamv/Expenses-Chart-Component-built-with-Chart-JS)
-- Live Site URL: [Web page](https://your-live-site-url.com)
+- Live Site URL: [Web page]( https://alesamv.github.io/Expenses-Chart-Component-built-with-Chart-JS/)
 
 ## My process
 

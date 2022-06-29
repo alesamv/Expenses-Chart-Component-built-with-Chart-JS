@@ -12,7 +12,6 @@
 * {
     margin: 0;
     font-family: 'DM Sans', sans-serif;
-    /* font-size: 18px;  XL */
 }
 
 body {
@@ -25,13 +24,17 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 90vh;
+    min-width: 375px - 2rem;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .balance {
     background-color: var(--soft-red);
     border-radius: 0.5rem;
     color: var(--pale-orange);
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +94,52 @@ body {
     font-weight: 600;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
 
+.attribution a { 
+    color: var(--cyan);
+    text-decoration: none; 
+}
 
+.attribution a:visited {
+    color: var(--cyan);
+}
 
+/* Laptops and XL devices */
+@media (min-width: 1024px) {
+    .balance {
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+    
+    .balance p {
+        font-size: 18px;
+    }
+    
+    .balance h2, .expenses h2 {
+        font-size: 30px;
+    }
+
+    .logo__balance img{
+        width: 100%;
+    }
+
+    .expenses {
+        padding: 2rem;
+    }
+
+    .resume__left p, .resume__right p{
+        font-size: 18px;
+    }
+
+    .resume__left h1 {
+        font-size: 40px;
+    }
+    
+    .resume__right h4 {
+        font-size: 18px;
+    }
+}

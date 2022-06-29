@@ -10,9 +10,6 @@ function getData() {
         labels.push(data[i].day);
         values.push(data[i].amount);
     }
-    console.log(labels)
-    console.log(values)
-
 
     new Chart(document.getElementById("bar-chart"), {
         type: 'bar',
